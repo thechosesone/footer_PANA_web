@@ -1,0 +1,146 @@
+    //Responsive contaier MOBILE
+
+    @media only screen and (max-width: 767px) {
+
+        .footer {  
+            display:block;
+            padding: 48px;
+            width: 100%;
+            height: auto;   
+        
+        > ul {
+            margin:auto;
+
+            &:not(:last-child) {
+                 margin-bottom: 36px;
+            }  
+        
+        }
+    }
+
+    .social-icons {
+        margin: 0 auto;
+    }
+
+  }
+    
+    //Responsive contaier Desktop
+    @media only screen and (min-width: 768px) {
+
+        .footer {  
+        display:flex;
+        padding: 48px 48px;
+        width:100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+
+
+        > ul {
+            margin:0;
+            align-self: flex-start;
+        }
+     }
+ }
+
+//Conteneor de listas
+
+    //linea
+     hr {
+         display: block;
+        color: $text-secondary;
+        width: 90vw;
+        height: 1px;
+        margin:0 auto;
+        padding: 0;
+        max-width: 1024px;
+    }
+
+.footer {
+
+    background-color: $background-primary;
+
+
+
+    > ul {
+
+        // List-Container
+        display: block;
+        width: 230px;
+        padding: 0;
+        //Spacing
+
+
+        //list-items
+        > li {
+            font-family: 'Lato', sans-serif;
+            color: $text-secondary;
+            font-size: 14px;
+            list-style-type: none;
+            font-weight: 400;
+
+        //List-title
+        &:first-child {
+
+                font-family: 'Lato', sans-serif;
+                color: $text-primary;
+                font-size: 16px;
+                margin-bottom: 24px;
+                font-weight: 700;
+            }
+
+            //List-item-Spacing
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            //list-anchorlink
+            > a {
+
+                font-family: 'Lato', sans-serif;
+                color: $text-secondary;
+                
+                &:hover {
+                    color: $text-primary;
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+//Social icons
+
+.social-icons {
+    width: 230px;
+    height: 18px;
+    display: flex;
+    justify-self: flex-end;
+
+    > a {
+        margin: 0 24px 0 0;
+        padding: 0;
+
+        >img {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    > p {
+
+        font-family: 'Lato', sans-serif;
+        color: $text-secondary;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: right;
+        padding: 0;
+        margin: 0 0 0 auto;
+    }
+
+}

@@ -1,0 +1,51 @@
+//global resets
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'lato', sans-serif;
+    background-color: $background-primary;
+}
+
+//links
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+//flexbox
+
+//helper classes for layout behavior
+
+.flex {
+
+    display: flex;
+
+&-jc-sb {
+    justify-content: space-between;
+}
+
+&-jc-c {
+    justify-content: center;
+}
+
+&-ai-c {
+    align-items: center;
+}
+
+}
+
+//spacing
+
+
+//fonts
+
